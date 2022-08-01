@@ -1,21 +1,22 @@
 
+  
 
-
-.wrapper{
+.wrapper div{
 	  
     display: flex;
     justify-content:center;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width:55%;
+    width: 55%;
     margin: 0 auto;
-    
-   
-}
+    background-color: yellowgreen;
+  }
+
+
 .signup-container{
   padding: 75px 0px;
-  overflow: auto;
+  
 }
     
 
@@ -30,12 +31,9 @@ justify-content:flex-start;
 }
 
   
-.grid-container {
-  display :grid;
-  gap: 0px 90px;
-  grid-template-columns: auto auto ;
-  padding: 70px 0px;
- }
+
+  
+ 
 
   .singup-icon{
     position: absolute;
