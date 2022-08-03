@@ -1,0 +1,136 @@
+
+.signup-container
+{
+ margin: 0 auto;
+ padding: 150px;
+ width: 60%;
+}
+
+.wrapper
+{
+  display: flex;
+  justify-content:center;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0 auto;
+   padding: 50px 0px;
+   line-height: 1;
+}
+
+h2
+{
+  margin-bottom: 33px;
+  font-weight: 700;
+  color: #222;
+  font-family: Poppins;
+  font-size: 36px
+}
+
+
+.singup-details
+{
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: 34px;
+}
+ 
+
+.singup-icon
+{
+  position: absolute;
+  margin-top:10px;
+}
+
+.sing-up-input
+{
+  border: none;
+  border-bottom: 1px solid #D1D1D4;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-size: 13px;
+  width: 75%;
+}
+
+.sing-up-input:active,
+.sing-up-input:focus
+{
+outline-style: none;
+border-bottom-color:black;
+}
+.form-sty{
+  position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+    line-height: 1.8;
+    display: block;
+}
+.btn{
+   
+  background:skyblue;
+  color: #fff;
+  width: auto;
+  margin :25px 0px 0px;
+  padding: 15px 20px;
+  border-radius:5px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+
+
+.btn:hover{
+    background: #4292dc;
+}
+
+.floating{
+color :black;
+
+}
+figure{
+ 
+  margin: 45px 55px;
+}
+.high{
+font-size: 14px;
+    color: #222;
+    display: block;
+    text-align: center;
+  }
+
+	
+  @media(max-width:1200px) {
+		
+    .signup-container{
+      width:98%;
+      padding: 30px;
+     
+  }
+
+}
+	
+
+  @media(max-width: 768px) {
+
+		.signup-container{
+      padding: 30px;
+    }
+    .wrapper{
+    flex-direction: column;
+    justify-content: center;
+     
+  }
+  figure{
+    text-align: center;
+  }
+  .position{
+    text-align: center;
+  }
+  .form-group:last-child {
+    margin-bottom: 0;
+}
+  
+
+}
