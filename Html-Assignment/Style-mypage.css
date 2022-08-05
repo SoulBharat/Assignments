@@ -3,12 +3,12 @@
 {
  margin: 0 auto;
  padding: 150px;
-<<<<<<< HEAD
+
  width:60%;
  
-=======
+
  width: 60%;
->>>>>>> main
+
 }
 
 .wrapper
@@ -108,20 +108,20 @@ font-size: 14px;
 	
   @media(max-width:1200px) {
 		
-<<<<<<< HEAD
+
     .signup-container
     {
       width: calc( 100% - 30px);;
       padding: 30px;
      
      }
-=======
+
     .signup-container{
       width:98%;
       padding: 30px;
      
   }
->>>>>>> main
+
 
 }
 	
@@ -129,11 +129,11 @@ font-size: 14px;
   @media(max-width: 768px) {
 
 		.signup-container{
-<<<<<<< HEAD
+
       margin: 40px 40px;
-=======
+
       padding: 30px;
->>>>>>> main
+
     }
     .wrapper{
     flex-direction: column;
@@ -148,17 +148,11 @@ font-size: 14px;
   }
   
 }
-<<<<<<< HEAD
+
 @media(max-width:600px)
 {
   .signup-container{
     padding: 20px 20px;
 }
 }
-  
 
-=======
-  
-
-}
->>>>>>> main
