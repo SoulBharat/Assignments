@@ -3,18 +3,7 @@
 {
  margin: 0 auto;
  padding: 150px;
-<<<<<<< HEAD
-=======
-
- width:60%;
- 
-
- width: 60%;
-
-
->>>>>>> eea5f0bcb759042915fc568e6110adedcf2e409f
 }
-
 
 .wrapper
 {
@@ -24,9 +13,8 @@
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 0 auto;
-   padding: 50px 0px;
-   line-height: 1;
-   width: 90%;
+  padding: 2vw;
+  width: 80%;
   
 }
 
@@ -77,6 +65,7 @@ border-bottom-color:black;
     overflow: hidden;
     line-height: 1.8;
     display: block;
+    text-transform: uppercase;
 }
 .btn{
    
@@ -145,10 +134,4 @@ font-size: 14px;
 
   
 
-<<<<<<< HEAD
 }
-=======
-
-}
-
->>>>>>> eea5f0bcb759042915fc568e6110adedcf2e409f
