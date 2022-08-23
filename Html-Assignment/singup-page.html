@@ -23,45 +23,43 @@
 					<i class=" singup-icon fa-solid fa-user"></i>
 					<input id="user" class="sing-up-input" type="text" placeholder="Name"
 						onchange=" return navalidation() ,myFunction1() " />
-					<label id="username" class="text-danger font-weigh-boldt"></label>
-					<br />
+
+					<label style="display: block;" id="username" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-envelope"></i>
 					<input id="vaemail" class="sing-up-input" type="email" placeholder="Email"
 						onchange="return emailvalidation()" />
-					<label id="validmail" class="text-danger font-weigh-boldt"></label>
-					<br />
+					<label style="display:block;" id="validmail" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-lock"></i>
 					<input class="sing-up-input" type="text" placeholder="Password" onchange=" return CheckPassword() "
-						id="pass" />'
-					<label id="validpass" class="text-danger font-weigh-boldt"></label <br />
-					<br />
+						id="pass" />
+					<label style="display: block;" id="validpass" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-lock"></i>
 					<input id="confirmpass" class="sing-up-input" type="text" placeholder="Repeat password"
 						onchange=" return confirm()" />
-					<label id="validconfirm" class="text-danger font-weigh-boldt"></label <br />
-					<br />
+					<label style="display: block;" id="validconfirm" class="errorm"></label>
 					<br />
 					<i class=" singup-icon fa-solid fa-phone"></i>
 					<input id="mobile" class="sing-up-input" type="tel" placeholder="Phone Number"
 						onchange="return mobilevalidate()"" />
-					<label id=" validmobile" class="text-danger font-weigh-boldt"></label>
+					<span style=" display: block;"id="validmobile" class="errorm"></span>
 					<br />
-					<br />
-					Country: <select name="subject" id="country">
-						<option value="" selected="selected">Country</option>
-					</select>
-					<br><br>
-					State: <select name="topic" id="state">
-						<option value="" selected="selected">Please select subject first</option>
-					</select>
-					<br><br>
-					City: <select name="chapter" id="city">
-						<option value="" selected="selected">Please select topic first</option>
-					</select>
-					<br><br>
+					<div class="dropdown">
+						Country: <select name="subject" id="country">
+							<option value="" selected="selected">Country</option>
+						</select>
+						<br>
+
+						State: <select name="topic" id="state">
+							<option value="" selected="selected">State</option>
+						</select>
+						<br>
+						City: <select name="chapter" id="city">
+							<option value="" selected="selected">City</option>
+						</select>
+					</div>
 					<br />
 					<input type="checkbox" name="tickme" value="I agree all statements in Terms of service" />
 					<label style="color:black" tickme">I agree all statements in <a
