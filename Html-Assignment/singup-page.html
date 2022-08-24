@@ -5,10 +5,11 @@
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>MYPAGE</title>
-	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<title>Sing-up-page</title>
+	<link rel="icon" type="image/png" href="images/favicon1.png" />
 	<link rel="stylesheet" type="text/css" href="Style-mypage.css" />
 	<script src="https://kit.fontawesome.com/84ed6968e4.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="validation.js"></script>
 
 </head>
 
@@ -17,24 +18,49 @@
 		<div class="wrapper">
 			<div class="singup-details">
 				<h2> Sign up </h2>
-				<form class="form-sty" action="destination.html" method="get">
+				<form class="form-sty" method="get" onsubmit=" return formvalues()">
+
 					<i class=" singup-icon fa-solid fa-user"></i>
-					<input class="sing-up-input" type="text" placeholder="Name" />
-					<br />
+					<input id="user" class="sing-up-input" type="text" placeholder="Name"
+						onchange=" return navalidation() ,myFunction1() " />
+
+					<label style="display: block;" id="username" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-envelope"></i>
-					<input class="sing-up-input" type="text" placeholder="Email" />
-					<br />
-					<br />
-					<i class="singup-icon fa-solid fa-lock"></i>
-					<input class="sing-up-input" type="text" placeholder="Password" />
-					<br />
+					<input id="vaemail" class="sing-up-input" type="email" placeholder="Email"
+						onchange="return emailvalidation()" />
+					<label style="display:block;" id="validmail" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-lock"></i>
-					<input class="sing-up-input" type="text" placeholder="Repeat password" />
+					<input class="sing-up-input" type="text" placeholder="Password" onchange=" return CheckPassword() "
+						id="pass" />
+					<label style="display: block;" id="validpass" class="errorm"></label>
 					<br />
+					<i class="singup-icon fa-solid fa-lock"></i>
+					<input id="confirmpass" class="sing-up-input" type="text" placeholder="Repeat password"
+						onchange=" return confirm()" />
+					<label style="display: block;" id="validconfirm" class="errorm"></label>
 					<br />
+					<i class=" singup-icon fa-solid fa-phone"></i>
+					<input id="mobile" class="sing-up-input" type="tel" placeholder="Phone Number"
+						onchange="return mobilevalidate()"" />
+					<span style=" display: block;"id="validmobile" class="errorm"></span>
+					<br />
+					<div class="dropdown">
+						Country: <select name="subject" id="country">
+							<option value="" selected="selected">Country</option>
+						</select>
+						<br>
 
+						State: <select name="topic" id="state">
+							<option value="" selected="selected">State</option>
+						</select>
+						<br>
+						City: <select name="chapter" id="city">
+							<option value="" selected="selected">City</option>
+						</select>
+					</div>
+					<br />
 					<input type="checkbox" name="tickme" value="I agree all statements in Terms of service" />
 					<label style="color:black" tickme">I agree all statements in <a
 							href="https://www.w3schools.com/html/html_classes.asp" style="color:black">Terms of service</a></label>
@@ -57,67 +83,3 @@
 	</div>
 
 </body>
-
-
-<head>
-	<style>
-		.sect {
-			text-align: center;
-			margin-bottom: 33px;
-			line-height: 1.66;
-			margin: 0;
-			padding: 0;
-			font-weight: 700;
-			color: #222;
-			font-family: Poppins;
-			font-size: 36px;
-		}
-
-		.btn {
-
-			margin: 25%;
-			padding: 15px 39px 39px 15px;
-
-		}
-	</style>
-
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MYPAGE</title>
-	<link rel="icon" type="image/png" href="images/favicon.png">
-</head>
-
-<body>
-
-	<form action="#" method="get">
-		<div class="sect">
-			<h1>
-				Singn up
-			</h1>
-			<input type="text" placeholder="Name " name="Name" required>
-			<br>
-			<br>
-			<input type="text" placeholder="Email" name="Email" required>
-			<br>
-			<br>
-			<input type="text" placeholder="password" name="password" required>
-			<br>
-			<br>
-			<input type="text" placeholder="Repeat password" name="Reapeat password" required>
-			<br>
-			<br>
-			<input type="checkbox" name="tickme" value="I agree all statements in Terms of service">
-			<label style="color:brown" tickme">I agree all statements in <a
-					href="https://www.w3schools.com/html/html_classes.asp">Terms of service</a></label><br>
-			<br>
-
-			<button class="btn">Register</button>
-	</form>
-	</div>
-	<div id="figure">
-		<img src="images/image.jpg" alt="Elephant at sunset">
-
-	</div>
-</body>
-
-</html>
