@@ -44,6 +44,7 @@ function CheckPassword() {
       "**Plaease Fill the required password";
     console.log("hekeke");
   } else if (passw.test(pass)) {
+    document.getElementById("validpass").innerHTML = "";
     console.log(pass);
     return true;
   } else {
@@ -55,8 +56,10 @@ function CheckPassword() {
 function confirm() {
   var password = document.getElementById("pass").value;
   var confirmpass = document.getElementById("confirmpass").value;
+
   if (password != confirmpass) {
     document.getElementById("validconfirm").innerHTML = "Password not matched";
+    console.log(confirmpass);
     return false;
   } else {
     document.getElementById("validconfirm").innerHTML = "";
