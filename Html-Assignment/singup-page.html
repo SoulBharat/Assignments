@@ -18,50 +18,48 @@
 		<div class="wrapper">
 			<div class="singup-details">
 				<h2> Sign up </h2>
-				<form class="form-sty" method="get" onsubmit=" return formvalues()">
-
+				<form class="form-sty" action="landedpage.html" id="Form">
 					<i class=" singup-icon fa-solid fa-user"></i>
-					<input id="user" class="sing-up-input" type="text" placeholder="Name"
+					<input id="user" class="sing-up-input" type="text" placeholder="Name" required
 						onchange=" return navalidation() ,myFunction1() " />
-
 					<label style="display: block;" id="username" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-envelope"></i>
-					<input id="vaemail" class="sing-up-input" type="email" placeholder="Email"
+					<input id="vaemail" class="sing-up-input" required type="email" placeholder="Email"
 						onchange="return emailvalidation()" />
 					<label style="display:block;" id="validmail" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-lock"></i>
-					<input class="sing-up-input" type="text" placeholder="Password" onchange=" return CheckPassword() "
+					<input class="sing-up-input" type="text" required placeholder="Password" onchange=" return CheckPassword() "
 						id="pass" />
 					<label style="display: block;" id="validpass" class="errorm"></label>
 					<br />
 					<i class="singup-icon fa-solid fa-lock"></i>
-					<input id="confirmpass" class="sing-up-input" type="text" placeholder="Repeat password"
+					<input id="confirmpass" class="sing-up-input" type="text" required placeholder="Repeat password"
 						onchange=" return confirm()" />
 					<label style="display: block;" id="validconfirm" class="errorm"></label>
 					<br />
 					<i class=" singup-icon fa-solid fa-phone"></i>
 					<input id="mobile" class="sing-up-input" type="tel" placeholder="Phone Number"
-						onchange="return mobilevalidate()"" />
-					<span style=" display: block;"id="validmobile" class="errorm"></span>
+						onchange="return mobilevalidate()" required />
+					<span style=" display: block;" id="validmobile" class="errorm"></span>
 					<br />
 					<div class="dropdown">
-						Country: <select name="subject" id="country">
+						Country: <select name="subject" id="country" required>
 							<option value="" selected="selected">Country</option>
 						</select>
 						<br>
 
-						State: <select name="topic" id="state">
+						State: <select name="topic" id="state" required>
 							<option value="" selected="selected">State</option>
 						</select>
 						<br>
-						City: <select name="chapter" id="city">
-							<option value="" selected="selected">City</option>
+						City: <select name="chapter" id="city" required>
+							<option value="" selected="selected">state</option>
 						</select>
 					</div>
 					<br />
-					<input type="checkbox" name="tickme" value="I agree all statements in Terms of service" />
+					<input type="checkbox" name="tickme" value="I agree all statements in Terms of service" required />
 					<label style="color:black" tickme">I agree all statements in <a
 							href="https://www.w3schools.com/html/html_classes.asp" style="color:black">Terms of service</a></label>
 					<br />
