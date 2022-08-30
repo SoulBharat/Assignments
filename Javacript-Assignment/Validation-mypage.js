@@ -264,4 +264,19 @@ window.onload = function () {
     }
   };
 };
-
+function formvalues() {
+  var user = document.getElementById("user").value;
+  var vaemail = document.getElementById("vaemail").value;
+  var pass = document.getElementById("pass").value;
+  var mobile = document.getElementById("mobile").value;
+  var country = document.getElementById("country").value;
+  var state = document.getElementById("state").value;
+  var city = document.getElementById("city").value;
+  document.writeln(user);
+  document.writeln(vaemail);
+  document.writeln(pass);
+  document.writeln(mobile);
+  document.writeln(country);
+  document.writeln(state);
+  document.writeln(city);
+}
